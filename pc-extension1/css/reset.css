@@ -1,0 +1,71 @@
+*{
+	margin:0;
+	padding:0;
+	list-style: none;
+	box-sizing:border-box;
+}
+
+body, button, input, select, textarea { color:#454545; } 
+ 
+body{
+	font:18px/1.5 "微软雅黑",
+	"Helvetica Neue",
+	Helvetica,Arial,
+	"Microsoft Yahei",
+	"Hiragino Sans GB",
+	"Heiti SC",
+	"WenQuanYi Micro Hei",
+	sans-serif;	
+}
+body { 
+	word-wrap:break-word; 
+	word-break:break-all; 
+	height:100%; 
+	position: relative;
+	overflow-x: hidden;
+	font-family: "微软雅黑";
+	} 
+button, input, select, textarea, h1, h2, h3, h4, h5, h6 { font-size:100%; }  
+h2, h3 { font-size:20px; }  
+button, input, select, textarea, label { 
+	vertical-align:middle; 
+	outline:none; 
+	resize:none;
+}  
+button {
+	text-align: center;
+	border :none;
+}
+img { 
+	vertical-align:middle;
+	border:none; 
+	display:inline-block;
+}  
+ul,li{
+	list-style: none;
+}
+ul,li{list-style-type: none;}
+
+/*IE8去除虚线框*/
+a:focus{outline: none;}
+a { 
+	text-decoration:none;
+	vertical-align:baseline; 
+	cursor:pointer;
+	color: #222;
+	display: block;
+}  
+/*清除浮动 2种方式*/
+.clear{clear: both;}
+.clear:after{
+	content: "";
+	display: block;
+	clear: both;
+	visibility: hidden;
+}
+.clear:before{
+	content: "";
+	display: block;
+	clear: both;
+	visibility: hidden;
+}

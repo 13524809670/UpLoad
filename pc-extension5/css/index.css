@@ -1,0 +1,332 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background: #f2f4f8;
+	font-family:Microsoft Yahei;
+}
+a{
+	text-decoration: none;
+	color: #444444;
+}
+ul li{
+	list-style: none;
+}
+img{
+	vertical-align: middle;
+}
+.fl{float: left;}
+.fr{float: right;}
+.clearfix:after{
+	content: " ";
+  	display: block;
+  	clear: both;
+  	height: 0;
+}
+.f_bg form .placeholder{
+	display: none;
+	color: #999999;
+	position: absolute;
+}
+.header{
+	width: 1180px;
+	margin: 0 auto;
+	padding: 20px 0px;
+}
+.banner{
+	position: relative;
+}
+.banner .image{
+	width: 100%;
+}
+.banner .image img{
+	width: 100%;
+	height: 540px;
+}
+.search{
+	position: absolute;
+	top: 140px;
+	left: 50%;
+	margin-left: -409px;
+	text-align: center;
+	color: #ffffff;
+}
+.search h1{
+	font-size: 60px;
+	margin-bottom: 58px;
+}
+.search p{
+	font-size: 18px;
+	margin-bottom: 88px;
+}
+.search form{
+	width: 798px;
+	height: 48px;
+	margin-bottom: 28px;
+	border: 5px solid;
+	border-color: rgba(255,255,255,.5);
+	border-radius: 5px;
+	font-size: 14px;
+	position: relative;
+	text-align: left;
+}
+.search form ul{
+	text-align: center;
+	left: 0px;
+	display: inline-block;
+	height: 48px;
+	border: none;
+	width: 105px;
+	background: #FFFFFF;
+	color: #444444;
+	line-height: 48px;
+	overflow: hidden;
+	border-right: 1px solid #e6e6e6;
+	cursor: pointer;
+}
+.search form ul.cur{
+	box-shadow: 2px 3px 5px #999999;
+}
+.search form ul span{
+	height: 48px;
+	display: inline-block;
+}
+.search form ul i{
+	margin: 20px 14px 0px 0px;
+	float: right;
+	display: inline-block;
+	width: 14px;
+	height: 7px;
+	background: url(../image/icon.png);
+	cursor: pointer;
+	transition: all 0.3s;
+}
+.search form ul i.top{
+	transform:rotate(180deg)
+}
+.search form ul li{
+	text-align: center;
+}
+.search form ul li:hover{
+	background: #2196f3;
+	opacity: 0.3;
+	color: #FFFFFF;
+}
+.search form input{
+	position: absolute;
+	height: 48px;
+	border: none;
+	outline: none;
+}
+.search form input[type="text"]{
+	width: 529px;
+	color: #999999;
+	padding-left: 24px;
+}
+.search form input[type="submit"]{
+	padding-left: 30px;
+	width: 140px;
+	background: #2196f3;
+	font-size: 16px;
+	color: #FFFFFF;
+	right: 0px;
+	z-index: 9;
+	cursor: pointer;
+}
+.search form .iconsearch{
+	display: inline-block;
+	position: absolute;
+	z-index: 10;
+	right: 78px;
+	top: 0px;
+	width: 30px;
+	height: 40px;
+	background: url(../image/icon.png) 0px -13px no-repeat;
+}
+.search form .placeholder{
+	height: 50px;
+	line-height: 50px;
+	top: 0px;
+	left: 130px;
+}
+.search p.hot{
+	margin-bottom: 58px;
+	text-align: left;
+}
+.search p.hot a{
+	color: #FFFFFF;
+	text-decoration: none;
+	margin-right: 20px;
+}
+.content{
+	width: 1180px;
+	margin: 0 auto;
+}
+.content .statistical{
+	text-align: center;
+	font-size: 18px;
+	color: #444444;
+	margin: 20px auto;
+}
+.content .red{
+	font-size: 24px;
+	color: #fc888c;
+	margin: 0px 10px;
+}
+.content .list li{
+	float: left;
+	width: 380px;
+	background: #fff;
+	text-align: center;
+	transition: all 0.2s;
+}
+.content .list li:hover{
+	margin:-5px 5px 5px -5px;
+	box-shadow: 5px 5px 5px rgba(68,68,68,.2);
+}
+.content .list li:nth-child(2){
+	margin: 0px 20px;
+}
+.content .list li:nth-child(2):hover{
+	margin: -5px 25px 5px 15px;
+}
+.content .list li .listicon{
+	
+}
+.content .list li .listicon .image{
+	margin: 46px auto 30px;
+	
+}
+.content .list li .listfont h6{
+	font-size: 20px;
+	color: #444444;
+	margin-bottom: 20px;
+	font-weight: normal;
+}
+.content .list li .listfont p{
+	width: 225px;
+	font-size: 14px;
+	line-height: 26px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	text-align: center;
+	color: #999999;
+}
+.footer{
+	text-align: center;
+	margin: 20px auto;
+	color: #999999;
+}
+.footer p{
+	font-size: 12px;
+	line-height: 26px;
+}
+/*弹窗*/
+.pop_ups{
+	width: 100%;
+	height: 100%;
+	background:rgba(0,0,0,.5);
+	position: fixed;
+	top:0;
+	left:0;
+	z-index: 100;
+	display: none;
+}
+.f_bg{
+	width: 400px;
+	height: 350px;
+	margin:0 auto;
+	background:rgba(255,255,255,.9);
+	position: fixed;
+	top:50%;
+	left: 50%;
+	margin-left: -200px;
+	margin-top: -175px;
+	z-index: 199;
+	display: none;
+	border-radius: 8px;
+}
+.f_bg h2{
+	font-size: 30px;
+	color: #666;
+	font-weight: 500;
+	padding:20px 0 0 40px;
+	margin-bottom: 20px;
+}
+.f_bg form{
+	width: 320px;
+	margin:0 auto;
+}
+.f_bg form input,
+.f_bg form span{
+	display: block;
+}
+.f_bg form input{
+	font-size: 16px;
+	text-indent: 8px;
+	outline: none;
+}
+.f_bg form span.tip{
+	font-size: 14px;
+	text-indent: 10px;
+}
+
+.f_bg form p{
+	height: 42px;
+    width: 320px;
+    font-size: 16px;
+	color: #666;
+	margin:15px auto 20px;
+	color: #fd2c3f;
+}
+.f_bg form p{
+	position: relative;
+}
+.f_bg form p .placeholder{
+	top: 10px;
+	left: 6px;
+}
+.onSuccess{
+	color: green;
+}
+.onError{
+	color: red;
+}
+.f_bg form #name,
+.f_bg form #phone,
+.f_bg form #code{
+	height: 40px;
+	border:1px solid #999;
+}
+.f_bg form #name,
+.f_bg form #phone{
+	width: 320px;
+}
+.f_bg form #code{
+	width: 183px;
+	float: left;
+}
+.f_bg form #btn{
+	width: 126px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background:#1a78c2;
+	border:none;
+	color: #fff;
+	float: right;
+	display: block;
+}
+.f_bg form #load{
+	display: block;
+	width: 320px;
+	line-height: 48px;
+	height: 48px;
+	text-align: center;
+	border:none;
+	color: #fff;
+	font-size: 22px;
+	background:#1a78c2;
+	margin:0 auto;
+}

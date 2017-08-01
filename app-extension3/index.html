@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>投资资讯查询</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+	<meta name="format-detection" content="telephone=no" />
+    <meta content="email=no" name="format-detection" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<div class="head">
+		<ul>
+			<li><a href="mailto:feedback@weiwob.cn">申诉</a></li>
+			<li><a href="mailto:report@weiwob.cn">举报</a></li>
+			<li class="margin">收藏本页</li>
+		</ul>
+	</div>
+	<div class="mianbody">
+		<div class="image">
+			<img src="img/logo.png" alt="">
+		</div>
+		<ul class="clear">
+			<li><a href="">原油</a></li>
+			<li class="mar"><a href="">大宗商品</a></li>
+			<li class="mar_right"><a href="">现货</a></li>
+			<li><a href="">贵金属</a></li>
+		</ul>
+		<form action="">
+			<span></span>
+			<input type="text" placeholder="请输入查询平台的名称" id="txtcon">
+			<div class="btn">查询</div>
+		</form>
+		<p>已有&nbsp;&nbsp;<strong id="data"></strong>&nbsp;&nbsp;名网友查询了&nbsp;&nbsp;<strong id="userCounts"></strong>&nbsp;&nbsp;个平台</p>
+	</div>
+	<div class="footer">
+		<p>拥有全国最大数据库，已收入&nbsp;&nbsp;<b id="platformCounts">375937568</b>&nbsp;&nbsp;家平台机构&nbsp;(截止&nbsp;<span id="date"></span>)</p>
+	</div>
+	<div class="mask"></div>
+	<div class="land_reg">
+		<div class="title">平台：投资资讯</div>
+		<form action="">
+			<p class="left1">姓名：<input type="text" id="username" name="" placeholder="请输入你的姓名"></p>
+
+			<p class="tip_con">手机号码：<input type="text" id="phone" name="" placeholder="请输入你的手机号码"></p>
+
+			<p class="left2 clear">
+			验证码：<input type="text" id="code" name="" placeholder="验证码">
+			<input type="button" value="获取验证码" id="btnCode">
+			</p>
+			<a href="javascript:void(0)" id="btn">立即提交</a>
+		</form>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script src="js/comment.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="js/data.js"></script>
+<script type="text/javascript" src="js/search.js"></script>
+<script type="text/javascript">
+	function browserRedirect() {
+		var sUserAgent= navigator.userAgent.toLowerCase();
+		var bIsIpad= sUserAgent.match(/ipad/i) == "ipad";
+		var bIsIphoneOs= sUserAgent.match(/iphone os/i) == "iphone os";
+		var bIsMidp= sUserAgent.match(/midp/i) == "midp";
+		var bIsUc7= sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+		var bIsUc= sUserAgent.match(/ucweb/i) == "ucweb";
+		var bIsAndroid= sUserAgent.match(/android/i) == "android";
+		var bIsCE= sUserAgent.match(/windows ce/i) == "windows ce";
+		var bIsWM= sUserAgent.match(/windows mobile/i) == "windows mobile";
+
+		if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+//	            window.location.href = 'http://m.cx.89xh.cc';
+		} else {
+			window.location.href = 'http://cx.89xh.cc';
+		}
+	}
+	browserRedirect();//调用自身，页面一打开就开始跳转
+</script>
+</html>

